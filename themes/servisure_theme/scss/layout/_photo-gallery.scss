@@ -1,0 +1,35 @@
+/* photo gallery overrides */
+
+.node--type-landing-page{
+	.slick-wrapper{
+		background-color: black;
+		outline: 1px solid $blue;
+		.slick--thumbnail{
+			outline: 1px solid $blue;
+		}
+		.slick__slide.slide.slick-slide.slick-current.slick-active.slick-center{
+			outline: 1px solid $blue;
+			&:before{ 
+			    background: rgba($blue,.5) !important;
+			    content: "";
+						  display: block;
+						  position: absolute;
+						  top: 0;
+						  bottom: 0;
+						  left: 0;
+						  right: 0;
+						  background:none;
+						  transition: all .3s linear;
+						  z-index: 2;
+						  min-height: 100%;
+						}
+			}
+		}
+	.slide__description{
+		background: rgba($blue,.75);
+		outline: 1px solid $blue;
+		color: white;
+	}
+
+	}
+	

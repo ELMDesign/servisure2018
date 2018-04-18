@@ -1,0 +1,7 @@
+{
+  "name": "ServiSure_Theme",
+  "private": "true",
+  "dependencies": {
+    "foundation": "../zurb_foundation"
+  }
+}

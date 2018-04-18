@@ -1,0 +1,18 @@
+{
+  "name": "Servisure_Theme",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "~1.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-drush": "*",
+    "grunt-sass": "^1.2.0",
+    "load-grunt-tasks": "~3.5.0",
+    "magnific-popup": "^1.1.0",
+    "node-bourbon": "4.2.8",
+    "node-sass": "~3.7.0"
+  }
+}

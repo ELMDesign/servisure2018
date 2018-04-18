@@ -1,0 +1,609 @@
+// Non-modular or client styles for .l-header region.
+
+header {
+	background-color: #000;
+	color: white;
+	position: relative;
+	z-index: 3;
+
+		.overlay{
+		position: static;
+		z-index: 9;
+		top:0;
+		left:0;
+		margin: auto;
+		width: 100%;
+		height: 100%;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#26354c+1,000000+100 */
+		//background: rgba(38,53,76,.35)
+		}
+		.b-loaded {
+    		opacity: .5 !important;
+		}
+		.slide__content{
+			background-color: black;
+		}
+		.slick-dotted.slick-slider {
+    		margin-bottom: 30px;
+		}
+	h1, a, .slide__caption > p { 
+		color: white;
+		
+	}
+	.slide__caption > p{
+		border-bottom: 1px solid $blue;
+    		padding-bottom: 2em;
+	}
+	
+
+	
+	.views-field-field-hero-image-subhead-text, 
+	.views-field-field-intro-text  {
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+		text-align: center;
+		color: white;
+
+		.field-content{
+			border-bottom: 1px solid $blue;
+    		padding-bottom: 2em;
+		}
+		
+	}
+
+
+	#homepage-hero-carousel{
+		position: static;
+		height: 100%;
+		.slick-list.draggable{
+			padding: 0 !important;
+		}
+		.field-field-collection-item--field-hero-image-title, 
+		.field-field-collection-item--field-hero-image-sub-text,
+		.field-field-collection-item--field-hero-image-link {
+			position: absolute;
+		    z-index: 999;
+		    display: block;
+		    left: 0;
+		    right: 0;
+		    margin-bottom: 1em;
+		    clear: both;
+		}
+		.field-field-collection-item--field-hero-image{
+			position: absolute;
+		    z-index: 0;
+		    width: 100%;
+		    left: 0;
+		    right: 0;
+		    top: 0;
+		}
+		.field-collection-item--name-field-home-page-hero-carousel{
+			.field-field-collection-item--field-hero-image-title{
+				top:0;
+				.field-item{
+				
+						@extend %font-header-text;
+						
+				}
+			}
+
+		.field-field-collection-item--field-hero-image-sub-text{
+			top: 5em;
+				.field-item{
+
+				
+					@extend %font-header-text;
+					
+
+				}
+			}
+
+		.field-field-collection-item--field-hero-image-link{
+
+				.field-item{
+
+					font-size: 1em;
+					
+						a {
+							border: 2px solid rgba(236, 211, 11, 0.8);
+							padding: .5em 1em;
+						
+						
+						text-transform: uppercase;
+						&:hover {
+							background: white;
+							color: $blue;
+						}
+					}
+					
+
+				}
+			}
+		}
+
+
+		
+		.slick-current.slick-active{
+
+			.slide__constrained{
+		//background: rgba(38,53,76,.33);
+
+
+		}
+		}	
+			.slide__link {
+				a {
+				border: 2px solid rgba(236, 211, 11, 0.8);
+				/* border-top: 2px solid rgba(255, 255, 255, 0.8); */
+					
+					text-transform: uppercase;
+					&:hover {
+						background: white;
+						color: $blue;
+					}
+				}
+			
+		}
+		.slick-dots li button:before{
+			    color: whitesmoke;	
+		}	
+		
+	}
+	#block-servisure-theme-branding {
+		position: absolute;
+    	z-index: 99;
+    	left: 0;
+    	right: 0;
+    	top: 25px;
+    	margin-left: auto; 
+  		margin-right: auto;
+    	
+    	#branding {
+    		position: absolute;
+    		left: 22%;
+    		top: 33%;
+    		line-height: 1.3em;
+    		#site-name {
+    			text-transform: lowercase;
+    			font-weight: 700;
+    			letter-spacing: 2px;
+    		}
+    		#tagline{
+    			letter-spacing: 1px;
+    			
+    		}
+    	}
+	}
+	#block-servisure-theme-page-title{
+		position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 33%;
+	    margin: 0 auto;
+	    z-index: 999;
+	    max-width: 570px;
+	    text-align: center;
+
+	}
+		
+
+
+}
+@media only screen{
+	header {
+		min-height: 667px;
+		.overlay{
+			min-height: 667px;
+		}
+		
+		#homepage-hero-carousel{
+			margin-top: 110px;
+		}
+
+		.views-field-field-hero-image-carousel,
+		.views-field-field-hero-image{
+		position: absolute;
+	    top: 150px;
+	    left: 0;
+	    right: 0;
+	    z-index: -1;
+	}
+		#block-servisure-theme-branding {
+		width: 275px;
+		}
+		#block-servisure-theme-page-title{
+		top: 140px;
+		max-width: 85%;
+			h1{
+				font-size: 2em;
+			}
+		}
+		.views-field-field-hero-image-subhead-text, 
+		.views-field-field-intro-text {
+		    position: absolute;
+		    z-index: 1;
+		    left: 0;
+		    right: 0;
+		    text-align: center;
+		    max-width: 80%;
+		    margin: auto;
+		 
+	}
+ 	.views-field-field-intro-text {
+	    top: 250px;
+	    .field-content{
+	    	color: white;
+		    font-size: 1em;
+		    line-height: 1.15em;
+		}
+	}
+	.views-field-field-hero-image-subhead-text {
+	    top: 250px;
+	    .field-content{
+	    	p{
+	    		color: white;
+			    font-size: 1em;
+			    line-height: 1.15em;
+	    	}
+		}
+	}
+
+	#logo{
+		max-width: 33%;
+		height: auto;
+		float: left;
+	}
+
+	#branding {
+		float: left;
+		list-style: none;
+		color: white;
+
+		#site-name{
+			font-size: 2em
+
+		}
+		#tagline{
+			font-size: .85em;
+		}
+		
+	}
+	.slick--skin--fullwidth .slide__constrained {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    min-height: 480px;
+    #homepage-hero-carousel{
+    	 #homepage-hero-carousel-slider{
+	    	.slick__slide{
+	    	
+	    }
+
+    }
+    }
+   
+    
+    .slide__caption{
+    	    	  .slide__title {
+    	    	font-size:1.25em;
+    	    	margin-top: 4em;
+    	    	}
+	    	    p{
+	    	    margin: 1em 2em;
+	    	    }
+	    	    .slide__link{
+	    	    	margin-top: 1em;
+	    	    	a{
+	    	    		font-size: .85em;
+	    	    		padding: .5em;
+	    	    		cursor: normal;
+	    	    	}
+	    	    }
+
+    	    }
+    #homepage-hero-carousel-slider{
+    	    min-height: 320px;
+    	    
+
+		}
+    }
+
+    .servisure-breadcrumbs{
+    	display: none; 
+    }
+    .down-arrow{
+		display: block;
+	    border: 2px solid rgba(236, 211, 11, 0.8);
+	    border-radius: 50%;
+	    font-size: 0;
+	    height: 75px;
+	    width: 50px;
+	    background-color: rgba(0,0,0,0);
+	    pointer-events: auto;
+	    position: absolute;
+	   	bottom:	100px;
+	    left: 50%;
+	    z-index: 999;
+	    -webkit-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    &:hover {
+	    	background-color: rgba(96,92,78,1);
+	    }
+
+	   
+	    .icon-chevron-thin-down {
+	    	color: white;
+	    	font-size: 36px;
+	    	position: absolute;
+	    	margin:auto;
+	    	top: 25%; right: 0; left: 0;
+	    }
+	}
+	.slick-dots {
+			top: 500px;
+		}
+	#homepage-hero-carousel-slider{
+
+		.field-collection-item--name-field-home-page-hero-carousel{
+			.field-field-collection-item--field-hero-image-title{
+				top:1em;
+				.field-item{
+						font-size: 2em;
+						line-height: normal;
+						
+						
+				}
+			}
+
+		.field-field-collection-item--field-hero-image-sub-text{
+			top: 8em;
+				.field-item{
+
+					font-size: 1em;
+					
+					
+
+				}
+			}
+		.field-field-collection-item--field-hero-image-link{
+			top: 14em;
+			}
+	}
+
+	}
+	
+  }
+}
+@media (min-width: 48em){
+	header {
+		min-height: 768px;
+		.overlay{
+			min-height: 768px;
+		}
+		#homepage-hero-carousel{
+			margin-top: 150px;
+		}
+	
+	#block-servisure-theme-page-title{
+		top: 200px;
+		h1{
+			font-size: 3.5em;
+			}
+		}
+ 	.views-field-field-intro-text {
+	    top: 300px;
+	    .field-content{
+		    font-size: 1.35em;
+		    line-height: 1.5em;
+		}
+	}
+	.views-field-field-hero-image-subhead-text {
+	    top: 350px;
+	    padding: 2em;
+	    .field-content{
+	    	p{
+			    font-size: 1.35em;
+			    line-height: 1.5em;
+	    	}
+		}
+	}
+
+		.servisure-breadcrumbs{
+	    display: block;
+	    list-style: none;
+	    margin-left: 10%;
+	    overflow: hidden;
+	    
+
+	    li{
+	    	display: inline-block;
+	    	font-size: .85em; 
+	    	.icon-chevron-right {
+	    		vertical-align: middle;
+	    	}
+	    }
+
+	   
+		}
+	
+
+	#block-servisure-theme-branding {
+	width: 570px;
+	}
+	#branding{
+		#site-name{
+		font-size: 4.2em;
+		}
+	
+	}
+	.slick--skin--fullwidth .slide__constrained {
+    height: 100%;
+    //left: 50%;
+    //margin-left: -50%;
+    //position: absolute;
+    width: 100%;
+    padding: 5%;
+    .slide__caption{
+    	 //left: 50%;
+		   // margin-left: -50%;
+		    padding: 0 10%;
+		    text-align: center;
+		    width: 100%;
+    	    	  .slide__title {
+    	    	font-size:3em;
+    	    	margin-top: 3em;
+    	    	}
+	    	    p{
+	    	    	display: block;
+	    	    	font-size: .9em;
+	    	    }
+
+    	    }
+	}
+	
+    #homepage-hero-carousel-slider{
+
+		.field-collection-item--name-field-home-page-hero-carousel{
+			.field-field-collection-item--field-hero-image-title{
+				top:3em;
+				.field-item{
+						font-size: 2em;
+						line-height: normal;
+						
+						
+				}
+			}
+
+		.field-field-collection-item--field-hero-image-sub-text{
+			top: 8em;
+				.field-item{
+
+					font-size: 1em;
+					
+					
+
+				}
+			}
+		.field-field-collection-item--field-hero-image-link{
+			top: 14em;
+			}
+	}
+
+	}
+
+	}
+	
+}
+@media (min-width: 48em) and (max-width: 64em){
+	header {
+		max-height: 100%;
+
+		.slick-dots {
+			top: 520px;
+		}
+	.down-arrow{
+			 top: 570px;
+		}
+
+		.slick--skin--fullwidth .slide__constrained {
+	   		 margin-left: -50%;
+    		width: 100%;
+			    .slide__caption{
+				    left: 0 !important;
+				    right: 0 !important;
+				    top: 0 !important;
+				    margin: 0 auto !important;
+				    padding: 0 10%;
+				    text-align: center;
+				    width: 100%;
+				    position: absolute;
+				}
+		}
+	}
+
+}
+@media (min-width: 64.063em){
+	header{
+		min-height: 800px;
+		max-height: 100%;
+		.overlay{
+			min-height: 800px;
+		}
+		.slick-slide{
+			max-height: 768px;
+		}
+		
+
+		#block-servisure-theme-page-title{
+		top: 250px;
+		max-width: 1024px;
+			h1{
+				font-size: 5em;
+				}
+			}
+	 	.views-field-field-intro-text {
+		    top: 400px;
+		   
+		}
+		.views-field-field-hero-image-subhead-text {
+		    top: 400px;
+		    
+		}
+		.servisure-breadcrumbs{
+			margin-left: 0;
+		}
+		.slick--skin--fullwidth .slide__constrained {
+	   		 margin-left: -50%;
+    		width: 100%;
+			    .slide__caption{
+				    left: 0 !important;
+				    right: 0 !important;
+				    top: 0 !important;
+				    margin: 0 auto !important;
+				    padding: 0 10%;
+				    text-align: center;
+				    width: 100%;
+				    position: absolute;
+				}
+		}
+		
+		.slick-dots {
+		
+			top: 630px;
+		}
+		.down-arrow{
+			 top: 680px;
+		}
+
+		.field-collection-item--name-field-home-page-hero-carousel{
+			.field-field-collection-item--field-hero-image-title{
+				top:5em !important;
+				.field-item{
+						font-size: 3.5em !important;
+						
+						
+				}
+			}
+
+		.field-field-collection-item--field-hero-image-sub-text{
+			top: 10em !important;
+				.field-item{
+
+					font-size: 1.35em !important;
+				
+					
+
+				}
+			}
+		.field-field-collection-item--field-hero-image-link{
+			top: 18em !important;
+			}
+
+
+		}
+	}
+	
+}

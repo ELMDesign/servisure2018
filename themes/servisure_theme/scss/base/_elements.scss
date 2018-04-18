@@ -1,0 +1,85 @@
+// Elements
+//
+// Things to review before you write code here:
+// - Be sure to load after "foundation" import.
+// - Also, before adding styles be sure to modify variables in the
+//   "base/_common.scss" file. You may not need to write any code.
+
+html, body, h1, h2, h3, h4, h5, h6, button, .button, submit, input, ul, label {
+	@extend %font-body-text;
+}
+
+caption, .caption {
+	@extend %font-caption;
+}
+
+// Headings
+//------------------------------------------
+h1, h2, h3,
+h4, h5, h6 {
+	@extend %font-header-text; 
+	color: $bronze;
+}
+
+p, ul {
+	color: shade($bronze, 50%);
+
+
+}
+
+
+
+
+// Anchors
+//-----------------------------------------------------------------------------
+a {
+	color: $blue;
+}
+
+a:focus, a:hover { 
+	color: tint($blue, 50%);
+	}
+
+// a.active,
+// a:active,
+// a:hover {}
+
+// Form Input
+//-----------------------------------------------------------------------------
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+// }
+
+// input[type="text"],
+// input[type="password"],
+// input[type="date"],
+// input[type="datetime"],
+// input[type="datetime-local"],
+// input[type="month"],
+// input[type="week"],
+// input[type="email"],
+// input[type="number"],
+// input[type="search"],
+// input[type="tel"],
+// input[type="time"],
+// input[type="url"],
+// textarea {
+
+// }
+
+// select {}
+
+//Icons
+

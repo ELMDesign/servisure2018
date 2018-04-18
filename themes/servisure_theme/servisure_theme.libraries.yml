@@ -1,0 +1,10 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/servisure_theme.css: {}
+  js:
+    js/servisure_theme.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

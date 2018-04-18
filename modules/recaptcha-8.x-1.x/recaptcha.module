@@ -1,0 +1,50 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_form_alter().
+ */
+function recaptcha_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $user = \Drupal::currentUser();
+  if (!$user->hasPermission('skip recaptcha')) {
+    $config = \Drupal::config('recaptcha.settings');
+    $form_ids = $config->get('form_ids');
+    if (in_array($form_id, $form_ids)) {
+      $form['recaptcha'] = [
+        '#type' => 'recaptcha',
+        '#weight' => 100,
+      ];
+      $form['actions']['#weight'] = $form['recaptcha']['#weight'] + 1;
+    }
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function recaptcha_theme($existing, $type, $theme, $path) {
+  return [
+    'recaptcha' => ['variables' => ['site_key' => NULL]],
+  ];
+}
+
+/**
+ * Implements hook_help().
+ */
+function recaptcha_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  $output = '';
+  switch ($route_name) {
+    case 'help.page.recaptcha':
+      $output .= "<p>" . t("The ReCAPTCHA module helps prevent spam on your site by using the <a href=\":recaptcha\">Google ReCaptcha Service</a>.", [':recaptcha' => 'https://www.google.com/recaptcha/intro/']);
+      $output .= "<p>" . t("You must sign up for an account in order to use this service and configure your site and secret keys on the <a href=\":settings\">ReCAPTCHA settings page</a>.", [':settings' => Url::fromRoute('recaptcha.admin_settings')->toString()]);
+      break;
+
+    case 'recaptcha.admin_settings':
+      $output .= "<p>" . t("Specify the form IDs to add a ReCAPTCHA widget.");
+      $output .= "<p>" . t("Form IDs can be found by viewing the source of a form and looking for the hidden input with the name \"form_id\".");
+      break;
+  }
+  return $output;
+}

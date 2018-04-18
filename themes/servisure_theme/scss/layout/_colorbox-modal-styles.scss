@@ -1,0 +1,254 @@
+//Modal Window Style Overrides
+
+.section-products{
+	/**
+ * Colorbox Core Style:
+ * The following CSS is consistent between example themes and should not be altered.
+ */
+	#colorbox, #cboxOverlay, #cboxWrapper {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 9999;
+	  overflow: hidden;
+	}
+	#cboxOverlay {
+	  position: fixed;
+	  width: 100%;
+	  height: 100%;
+	}
+	#cboxMiddleLeft, #cboxBottomLeft {
+	  clear: left;
+	}
+	#cboxContent {
+	  position: relative;
+	}
+	#cboxLoadedContent {
+	  overflow: auto;
+	  -webkit-overflow-scrolling: touch;
+	}
+	#cboxTitle {
+	  margin: 0;
+	}
+	#cboxLoadingOverlay, #cboxLoadingGraphic {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	}
+	/**
+	 * These elements are buttons, and may need to have additional
+	 * styles reset to avoid unwanted base styles.
+	 */
+	#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+	  border: 0;
+	  padding: 0;
+	  margin: 0;
+	  overflow: visible;
+	  width: auto;
+	  background: none;
+	  cursor: pointer;
+	}
+	/**
+	 * Avoid outlines on :active (mouseclick),
+	 * but preserve outlines on :focus (tabbed navigating)
+	 */
+	#cboxPrevious:active, #cboxNext:active, #cboxClose:active, #cboxSlideshow:active {
+	  outline: 0;
+	}
+	.cboxPhoto {
+	  float: left;
+	  margin: auto;
+	  border: 0;
+	  display: block;
+	  max-width: none;
+	}
+	.cboxIframe {
+	  width: 100%;
+	  height: 100%;
+	  display: block;
+	  border: 0;
+	}
+	/* Reset box sizing to content-box if theme is using border-box. */
+	#colorbox, #cboxContent, #cboxLoadedContent {
+	  -moz-box-sizing: content-box;
+	  -webkit-box-sizing: content-box;
+	  box-sizing: content-box;
+	}
+
+	/**
+	 * Colorbox module default style:
+	 * The styles are ordered & tabbed in a way that represents
+	 * the nesting of the generated HTML.
+	 */
+	#cboxOverlay {
+	  background-color: rgba($dark-blue,.95);
+	}
+	#colorbox {
+	  outline: 0;
+	}
+	  #cboxWrapper {
+	    background: #000;
+	
+	  }
+	    #cboxTopLeft {
+	      width: 15px;
+	      height: 15px;
+	    }
+	    #cboxTopCenter {
+	      height: 15px;
+	    }
+	    #cboxTopRight {
+	      width: 15px;
+	      height: 15px;
+	    }
+	    #cboxBottomLeft {
+	      width: 15px;
+	      height: 10px;
+	    }
+	    #cboxBottomCenter {
+	      height: 10px;
+	    }
+	    #cboxBottomRight {
+	      width: 15px;
+	      height: 10px;
+	    }
+	    #cboxMiddleLeft {
+	      width: 15px;
+	    }
+	    #cboxMiddleRight {
+	      width: 15px;
+	    }
+	    #cboxContent {
+	      background: #000;
+	      overflow: hidden;
+	    }
+	      #cboxError {
+	        padding: 50px;
+	        border: 1px solid #ccc;
+	      }
+	      #cboxLoadedContent {
+	        margin-bottom: 28px;
+	      }
+	      #cboxTitle {
+	        position: absolute;
+		    background-color: rgba($dark-blue,.75);
+		    top: 0;
+		    left: 0;
+		    color: $outline-blue;
+		    width: 100%;
+		    -moz-box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+		    box-sizing: border-box;
+		    height: 1.7em;
+		    font-size: 2em;
+	      }
+	      #cboxCurrent {
+	        position: absolute;
+		    bottom: .25em;
+		    left: 6em;
+		    color: $outline-blue;
+		    @extend %font-caption;
+			font-size: .75em;
+	      }
+	      .cboxSlideshow_on #cboxSlideshow {
+	        position: absolute;
+	        bottom: 0px;
+	        right: 30px;
+	        //background: url(images/controls.png) no-repeat -75px -50px;
+	        width: 25px;
+	        height: 25px;
+	        //text-indent: -9999px;
+	      }
+	      .cboxSlideshow_on #cboxSlideshow:hover {
+	        background-position: -101px -50px;
+	      }
+	      .cboxSlideshow_off #cboxSlideshow {
+	        position: absolute;
+	        bottom: 0px;
+	        right: 30px;
+	        background: url(images/controls.png) no-repeat -25px -50px;
+	        width: 25px;
+	        height: 25px;
+	        text-indent: -9999px;
+	      }
+	      .cboxSlideshow_off #cboxSlideshow:hover {
+	        background-position: -49px -50px;
+	      }
+	      #cboxPrevious {
+	        position: absolute;
+	        bottom: 0;
+	        left: 0;
+	        background: none;
+	        width: 1.5em;
+	        height: 1.5em;
+	        text-indent: 0;
+	        color: $outline-blue;
+	        border: 1px solid $outline-blue;
+	        &:focus {
+    			outline: none;
+				}
+	        &:hover{
+	        	border: 1px solid white;
+	        	background-color: $blue;
+	        	.icon{
+	        		color: white;
+	        	}
+	        }
+	      }
+	      
+	      #cboxNext {
+	        position: absolute;
+	        bottom: 0;
+	        left: 2em;
+	        background: none;
+	        width: 1.5em;
+	        height: 1.5em;
+	        text-indent: 0;
+	        color: $outline-blue;
+	        border: 1px solid $outline-blue;
+	        &:focus {
+    			outline: none;
+				}
+	       &:hover{
+	        	border: 1px solid white;
+	        	background-color: $blue;
+	        	.icon{
+	        		color: white;
+	        	}
+	        }
+	      }
+
+	      #cboxLoadingOverlay {
+	        background: #fff;
+	      }
+	      #cboxLoadingGraphic {
+	        background: url(images/loading_animation.gif) no-repeat center center;
+	      }
+	      #cboxClose {
+	        position: absolute;
+		    top: .25em;
+		    right: .25em;
+		    width: 2.5em;
+		    height: 2.5em;
+		    text-indent: 0;
+		    color: white;
+		    background: none;
+		    color: $outline-blue;
+	        border: 1px solid $outline-blue;
+		    .icon {
+		    	color: $outline-blue;
+		    	font-size: 2em;
+		    }
+	        &:hover{
+	        	border: 1px solid white;
+	        	background-color: $blue;
+	        	.icon{
+	        		color: white;
+	        	}
+	        }
+	      }
+	      
+
+}

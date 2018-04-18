@@ -1,0 +1,131 @@
+// Common abstract classes to extend or parametrics are stored here.
+
+// Example parametrics.
+// ------------------------------------------------------
+%font-body-text   { font-family: 'PT Sans';}
+%font-caption	  { font-family: 'PT Sans Caption,'sans-serif; }
+%font-sans-serif { font-family: 'PT Sans', 'PT Sans Caption,'sans-serif; }
+
+%font-header-text,%font-navigation-bar { 
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700; 
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+//Color Palette
+
+$blue : #3e577b;
+$bronze: rgb(98,92,78);
+$accent-yellow: rgb(236,211,75);
+$background-gray: rgb(211,223,230);
+$dark-gray: #222;
+$light-gray: tint($dark-gray, 75%);
+
+$dark-blue: shade($blue,75%);
+$menu-background: tint($background-gray, 50%);
+$menu-background-submenu: tint($blue, 55%);
+$menu-background-submenu-title: tint($blue, 15%);
+
+
+$light-blue: rgb(216,229,229);
+$membership-gray:rgb(151,157,165);
+$field-blue: rgb(229,236,240);
+$outline-blue: #84a6b9;
+
+//Icons
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'servisure-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-chevron-left:before {
+  content: "\e901";
+}
+.icon-chevron-right:before {
+  content: "\e902";
+}
+.icon-chevron-thin-down:before {
+  content: "\e903";
+}
+.icon-chevron-thin-left:before {
+  content: "\e904";
+}
+.icon-chevron-thin-right:before {
+  content: "\e905";
+}
+.icon-chevron-thin-up:before {
+  content: "\e906";
+}
+.icon-download:before {
+  content: "\e907";
+}
+.icon-upload:before {
+  content: "\e908";
+}
+.icon-cross:before {
+  content: "\e909";
+}
+.icon-home:before {
+  content: "\e90a";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-printer:before {
+  content: "\e954";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-download2:before {
+  content: "\e9c5";
+}
+.icon-sphere:before {
+  content: "\e9c9";
+}
+.icon-share:before {
+  content: "\ea7d";
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-google:before {
+  content: "\ea89";
+}
+.icon-google-plus:before {
+  content: "\ea8c";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-vimeo:before {
+  content: "\eaa1";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-pinterest:before {
+  content: "\ead2";
+}
+.icon-file-pdf:before {
+  content: "\eadf";
+}
+

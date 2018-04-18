@@ -1,0 +1,124 @@
+/*Callouts and Features */
+
+/*Call Out Boxes*/
+
+.field-node--field-left-callout-text-box {
+	width: 50%;
+	
+	float: left;
+	margin-bottom: 1.5em;
+
+	.field-items{
+		.field-item{
+			padding: 1em;
+			min-height: 400px;
+			position: relative;
+			.button-container{
+				    position: absolute;
+				    bottom: 0;
+				    height: 3em;
+				    left: 12.5%;
+				    width: 75%;
+				.view-all{
+					background-color: tint($background-gray, 85%);
+				    text-transform: uppercase;
+				    color: $blue;
+				    border: 2px solid $blue;
+				    font-size: 1em;
+				    -webkit-transition: all .3s linear;
+				    transition: all .3s linear;
+				    height: 2.5em;
+				    padding: .5em 1em;
+				    border-radius: inherit;
+				    width: 100%;
+				    &:hover{
+				    	color: $field-blue;
+				    	background-color: $blue;
+
+				    }
+
+				}
+			}
+			
+			
+		}
+	}
+}
+
+.field-node--field-callout-text-box {
+	width: 50%;
+	float: right;
+	background-color: $blue;
+	margin-bottom: 1.5em;
+	.field-items{
+		.field-item{
+			padding: 1em;
+			min-height: 400px;
+			h2{
+				color: white;
+			}
+			
+			p{
+				font-size: 1.25em;
+				color: white;
+
+			}	
+		}
+	}
+}
+.left-callout-area{
+	padding: 2em 2em 2em 0;
+	margin-bottom: 2em;
+	height: 320px;
+	.button-container{
+		position: relative;
+		width: 100%;
+		text-align: center;
+		padding-top: 2em;
+		.view-all{
+			background: none;
+			 border: 2px solid $blue;
+			 color: $blue;
+			 &:hover{
+			 	background: $blue;
+			 	color: white;
+			 }
+		}
+	}
+}
+.right-callout-area {
+	padding: 2em;
+	height: 320px;
+	background-color: $dark-blue;
+	margin-bottom: 2em;
+	h2, h3, h4, h5,p, ol, ul, a {
+		color: white;
+
+	}
+	p{
+		font-size: 1.25em;
+	}
+}
+
+.category-callout-area{
+	background-color: $dark-blue !important;
+	opacity: .75;
+	padding: 2em;
+	h2, h3, h4, h5,p, ol, ul, a {
+		color: white;
+
+	}
+	p{
+		font-size: 1.25em;
+	}
+	ul{
+	list-style: none;
+		li{
+			&:before{
+				font-family: 'servisure-icons' !important;
+				content: "\e902";
+				vertical-align: middle;
+			}
+		}
+}
+}

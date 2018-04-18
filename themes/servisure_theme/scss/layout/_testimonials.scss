@@ -1,0 +1,40 @@
+/* testimonials block */
+
+#testimonial-carousel{
+
+	#testimonial-carousel-slider{
+		paddding-top: 1.25em;
+		.slick-track{
+			.slick-slide:not(.slick-center){
+				visibility: hidden !important;
+			}
+
+			.slick-slide{
+				font-size: 1.15em;
+				.testimonial-item-text{
+					margin-top: 1.15em;
+					line-height: normal;
+					font-style: italic;
+
+				}
+			    .testimonial-item-title{
+			    	text-transform: capitalize;
+			    	float: right;
+			    	clear: right;
+			    	margin-top: 1.15em;
+
+			    }
+			    .testimonial-item-company-name{
+			    	text-transform: uppercase;
+			    	font-weight: bold;
+			    	float:right;
+			    	clear: right;
+			    	margin-bottom: 1.15em;
+
+			    }
+			}
+			
+			}	
+		}
+		
+}

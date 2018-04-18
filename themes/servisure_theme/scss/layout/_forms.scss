@@ -1,0 +1,212 @@
+.contact-form {
+	padding: 1em;
+	background-color: $light-blue;
+	color: $blue;
+	position: relative;
+
+   
+	h2, label {
+		color: $blue;
+	}
+	label {
+		
+		@extend %font-caption;
+		font-size: .75em;
+
+	}
+
+
+	input, select, textarea {
+		background-color: $field-blue;
+		border: none;
+		color: $blue;
+
+		@extend %font-caption;
+		font-size: .75em;
+
+
+	}
+	input, select {
+		//width: 95%;
+		height: 4em;
+
+	}
+	
+	.form-actions, .button-group{
+		.form-submit, .button.secondary{
+		    background-color: #e5ecf0;
+		    text-transform: uppercase;
+		    color: #3e577b;
+		    border: 2px solid #3e577b;
+		    font-size: 1em;
+		    -webkit-transition: all .3s linear;
+		    transition: all .3s linear;
+		    height: 2.5em;
+		    padding: .5em 1em;
+		    border-radius: inherit;
+	    &:hover{
+	    	color: $field-blue;
+	    	background-color: $blue;
+
+	    }
+
+	}
+
+	}
+}
+
+	@media (min-width: 48em) and (max-width: 64em){
+		div.contact-form {
+			padding: 1em 1em 2em 2em;
+		}
+		.form-item.js-form-item{
+			//&:nth-child(odd){
+				padding-right: 1em;
+			//}
+		}
+		.js-form-type-textfield,.js-form-type-email,
+		.js-form-type-tel,.js-form-type-select {
+			width: 50%;
+			float: left;
+			.js-form-type-textfield, .js-form-type-email,.js-form-type-tel,.js-form-type-select {
+		    float: left;
+		    margin-bottom: .15em;
+		    
+			}
+		}
+		.js-form-type-textarea > div {
+			width: 48%;
+			float: right;
+		}
+		.captcha {
+		width: 50%;
+		position: relative;
+			.g-recaptcha{
+				position: absolute;
+	    		top: 4.5em;
+	    	}
+		}
+		.form-actions{
+			width: 75%;
+			float: right;
+			.form-submit{
+				width: 45%;
+			    float: right;
+			    margin-right: 1em;
+			}
+
+		}
+
+	}
+	@media (min-width: 64.063em){
+
+		.form-item.js-form-item{
+				padding-right: 1em;
+		}
+		.js-form-type-textfield,.js-form-type-email,
+		.js-form-type-tel,.js-form-type-select {
+			width: 25%;
+			float: left;
+			.js-form-type-textfield, .js-form-type-email,.js-form-type-tel,.js-form-type-select {
+		    float: left;
+		    margin-bottom: .15em;
+		    
+			}
+		}
+		.js-form-type-textarea > div {
+			width: 74.5%;
+			float: left;
+		}
+
+		.form-actions{
+			width: 75%;
+			float: right;
+			.form-submit{
+				width: 45%;
+			    float: right;
+			    margin-right: 1em;
+			 }
+
+		}
+
+	}
+
+// User Login Form Style Settings
+.section-user{
+	.user-login-form, .user-pass, .user-register-form{
+	margin-top: 2em;
+
+	.form-item, p {
+		width: 50%;
+		margin-bottom: 1em;
+		float: left;
+
+
+		label.form-required{
+			font-weight: bold;
+			font-size: 1.25em;
+		}
+		input.required{
+			margin-bottom: .125em;
+		}
+
+		.description{
+			font-size: .85em;
+			margin-top: 0;
+			font-style: italic;
+			color: $light-gray;
+		}
+		
+	}
+	#edit-actions{
+
+		.form-submit{
+			color: $field-blue;
+		    background-color: $blue;
+		    font-size: 1.5em;
+		     text-transform: uppercase;
+		    -webkit-transition: all .3s linear;
+		    transition: all .3s linear;
+		    height: 2.5em;
+		    padding: .5em 1em;
+		    margin-right: 1em;
+		    border-radius: inherit;
+		     &:hover{
+		    	background-color: #e5ecf0;
+		   		color: #3e577b;
+		    	border: 2px solid #3e577b;
+
+		    }
+			
+		}
+		}
+	 
+	}
+	section.block-servisure-theme-local-tasks{
+		margin-bottom: 2em;
+		border-bottom: dotted $light-gray 1px;
+		width: 100%;
+		text-align: left;
+		clear: left;
+
+		.button.secondary{
+		    background-color: #e5ecf0;
+		    text-transform: uppercase;
+		    color: #3e577b;
+		    border: 2px solid #3e577b;
+		    font-size: 1em;
+		    -webkit-transition: all .3s linear;
+		    transition: all .3s linear;
+		    height: 2.5em;
+		    padding: .5em 1em;
+		    margin-right: 1em;
+		    border-radius: inherit;
+		    &:hover{
+		    	color: $field-blue;
+		    	background-color: $blue;
+
+		    }
+		}
+
+	}
+}

@@ -1,0 +1,82 @@
+// Non-modular or client styles for .l-footer region.
+footer {
+	background-color: $bronze;
+	color: $light-blue;
+	border-top: 3px solid $light-blue;
+	.row {
+		
+		#footer-first>div,#footer-second>div,
+		#footer-third>div,#footer-last>div
+		{
+				display: table;
+				height: 100px;			
+		}
+	   }
+	a, li{
+	   color: $light-blue;
+
+
+	}
+	#block-servisure-theme-footer, #footer-second section,#block-views-block-phone-and-fax-numbers-block-1 {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	
+	#footer-third{
+		.views-field-field-icon-link-item-display, .views-field-field-link{
+			float: left;
+			.field-content{
+				float: left;
+				.linkicon__icon{
+					margin-right: .5em;
+				}
+			}
+		}
+	}
+
+	#footer-first{
+		li{
+			display: inline-block;
+			margin-right: .5em;
+		}
+		
+	}
+	li {
+		list-style: none;
+		
+
+		//display: inline;
+		.views-field-field-business-name {
+			font-size: 1em;
+		}
+		.views-field-field-city, .views-field-field-state, .views-field-field-zip-code{
+			float: left;
+			margin-right: .5em;
+		}
+	}
+
+	#footer-last{
+		div {
+			width: 100%;
+		}
+		.item-list--linkicon{
+			.linkicon{
+			li {
+				float: left;
+				padding: .5em;
+				a{
+					.linkicon__icon{
+						font-size: 2.5em;
+					}
+				}
+			}
+
+		}
+		}
+		
+		.linkicon__text{
+			display: none;
+		}
+	}
+}

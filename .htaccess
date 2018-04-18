@@ -97,13 +97,6 @@ AddEncoding gzip svgz
   RewriteEngine on
 # AddHandler application/x-httpd-php53 .php
 
-RewriteCond %{HTTP_HOST} ^serv\-sure\.com$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.serv\-sure\.com$
-RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
-RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
-RewriteRule ^/?$ "http\:\/\/www\.servisure\.com" [R=301,L]
-
 # Start A2 Switcher Block
 # Do not remove or modify this block! Added by PHP Switcher from cPanel to use an alternate PHP version. Contact Support for details.
 <IfModule mod_suphp.c>

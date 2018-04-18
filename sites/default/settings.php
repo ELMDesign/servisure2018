@@ -734,6 +734,17 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
 }
 // </DDSETTINGS>
 $databases['default']['default'] = array (
+  'database' => 'servi1_servisure_Drupal_v851',
+  'username' => 'servi1_d8_user',
+  'password' => 'p{}B7Z{X3Px]',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+/*
+$databases['default']['default'] = array (
   'database' => 'servisure_dev_new',
   'username' => 'drupaluser',
   'password' => '',
@@ -742,7 +753,9 @@ $databases['default']['default'] = array (
   'port' => '33067',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
-);
+);*/
+
+
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/sync';
 //$config_directories['default'] = '../config/default';

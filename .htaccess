@@ -94,7 +94,22 @@ AddEncoding gzip svgz
   # directories from your webroot or otherwise protect them from being
   # downloaded.
   RewriteRule "/\.|^\.(?!well-known/)" - [F]
+  RewriteEngine on
+# AddHandler application/x-httpd-php53 .php
 
+RewriteCond %{HTTP_HOST} ^serv\-sure\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.serv\-sure\.com$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^/?$ "http\:\/\/www\.servisure\.com" [R=301,L]
+
+# Start A2 Switcher Block
+# Do not remove or modify this block! Added by PHP Switcher from cPanel to use an alternate PHP version. Contact Support for details.
+<IfModule mod_suphp.c>
+  AddHandler application/x-httpd-php-5.5.0 .php
+</IfModule>
+# End A2 Switcher Block
   # If your site can be accessed both with and without the 'www.' prefix, you
   # can use one of the following settings to redirect users to your preferred
   # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
